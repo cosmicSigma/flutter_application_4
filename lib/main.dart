@@ -23,13 +23,39 @@ class Lesson extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "Hello Group B28",
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-            color: Colors.green.shade500
-          ),
+        child: Column(
+          children: [
+           Text (
+              "Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28 Hello Group B28",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.green.shade500,
+                height: 2
+              ),
+              selectionColor: Colors.black,
+              textHeightBehavior: TextHeightBehavior(
+                applyHeightToFirstAscent: true,
+                applyHeightToLastDescent: true,
+                // leadingDistribution: TextLeadingDistribution.even
+              ),
+            ),
+            Text (
+              "Hello Group B28",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.green.shade500,
+                height: 2
+              ),
+              selectionColor: Colors.black,
+              textHeightBehavior: TextHeightBehavior(
+                applyHeightToFirstAscent: true,
+                applyHeightToLastDescent: false,
+                leadingDistribution: TextLeadingDistribution.even
+              ),
+            ),
+          ],
         ),
       ),
     );
